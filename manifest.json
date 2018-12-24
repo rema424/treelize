@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Treelize",
   "description": "Generate directory tree views from a simple template.",
-  "version": "1.0",
+  "version": "1.1",
   "browser_action": {
     "default_icon": {
       "128": "icon128.png"
