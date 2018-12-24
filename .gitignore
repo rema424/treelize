@@ -1,2 +1,3 @@
 **/*.gif
 !materials/demo480.gif
+*.zip
