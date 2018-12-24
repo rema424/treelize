@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Treelize</title>
+    <style>
+      body {
+        background: #f8f8f8;
+        font-size: 14px;
+        font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, Verdana, sans-serif;
+        color: #333;
+      }
+      textarea {
+        font-size: 12px;
+        font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, Verdana, sans-serif;
+        color: #333;
+        padding: 8px;
+      }
+      button {
+        cursor: pointer;
+        font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, Verdana, sans-serif;
+      }
+      button:active {
+        color: #333;
+        background: #f8f8f8;
+        outline: 0;
+      }
+      #output {
+        background: #374646;
+        color: #e3e3e3;
+      }
+      #output-area {
+        position: relative;
+      }
+      #copy {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Input</h2>
+    <div><textarea id="input" rows="12" cols="80" spellcheck="false"></textarea></div>
+    <p><button id="convert">convert</button></p>
+    <h2>Output</h2>
+    <div id="output-area">
+      <button id="copy">copy to clipboard</button>
+      <textarea id="output" rows="14" cols="80" spellcheck="false" disabled></textarea>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
